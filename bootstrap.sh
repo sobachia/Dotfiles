@@ -27,7 +27,7 @@ fi
 
 echo "=== Stowing dotfiles -> \$HOME ==="
 command -v stow >/dev/null || { echo "install stow first"; exit 1; }
-stow -v -R -t "$HOME" zsh bash git tmux nvim config bin
+stow -v -R -t "$HOME" zsh bash git tmux nvim config
 
 echo "=== oh-my-zsh + theme/plugins (if missing) ==="
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
@@ -52,4 +52,3 @@ nvim --headless "+Lazy! sync" +qa || true
 echo "=== done ==="
 echo "Next: chsh -s \$(which zsh), restart shell, run 'p10k configure' if prompt looks off."
 echo "Omarchy: Setup > Defaults > Editor = nvim. Theme via Super+Space > Theme."
-echo "WSL-only ~/bin/obsidian does nothing on Omarchy - edit or delete it."

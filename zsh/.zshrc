@@ -125,8 +125,6 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Exercism CLI zsh completion: auto-loaded by oh-my-zsh from ~/.oh-my-zsh/completions/_exercism
-
 # opencode
 export PATH=/home/builder/.opencode/bin:$PATH
 
@@ -138,10 +136,4 @@ alias vi="nvim"
 source <(fzf --zsh)
 export PATH="$HOME/bin:$PATH"
 
-# Obsidian CLI autocomplete
-# Completes the 'obsidian' command word
-_obsidian() {
-  _arguments '-h[help]' && return 0
-}
-compdef _obsidian obsidian
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"

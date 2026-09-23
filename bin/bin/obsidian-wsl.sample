@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-exec "/mnt/c/Program Files/Obsidian/Obsidian.exe" "$@" >/dev/null 2>&1

@@ -10,7 +10,6 @@ Stow-based backup. Restores shell, editor, tmux, git, and tool settings on a fre
 * `tmux/` -> `~/.tmux.conf` (plugins NOT versioned, reinstall via TPM)
 * `nvim/` -> `~/.config/nvim/` (LazyVim, `lazy-lock.json` pins exact commits)
 * `config/` -> `~/.config/lazygit/`, `~/.config/opencode/`, `~/.config/uv/`
-* `bin/` -> `~/bin/obsidian` (WSL-only wrapper, sample on Omarchy)
 * `packages/` -> apt/cargo/npm/uv lists + tmux SHAs (meta, not stowed)
 * `omarchy/` -> placeholder for future `~/.config/hypr`, `omarchy`, `waybar`, `foot`
 
@@ -29,6 +28,6 @@ What bootstrap does: pacman installs, `stow -R -t ~`, clones oh-my-zsh + powerle
 
 * Secrets excluded via `.gitignore`: `.git-credentials`, history, cache, `node_modules`, `.tmux/plugins`, zoxide db. Never `git add -f` those.
 * Ubuntu -> Arch renames: `batcat->bat`, `fdfind->fd` (symlinks in `~/.local/bin` intentionally NOT backed up).
-* `~/bin/exercism` binary NOT backed up (9MB) — reinstall via `packages/apt-explicit.txt` or `yay -S exercism-bin`.
+* Exercism + Obsidian CLI intentionally excluded from this backup.
 * `nvim` is exact: `lazy-lock.json` restores same plugin commits; Mason LSPs/treesitters re-download on first open.
 * Omarchy owns `/usr/share/omarchy`; your overrides live in `~/.config` (hypr, omarchy/shell.json, foot). Add them here later with `stow`.
