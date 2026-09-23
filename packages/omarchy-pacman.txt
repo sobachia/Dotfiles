@@ -1,0 +1,28 @@
+# pacman equivalents for Omarchy (mapped from packages/apt-explicit.txt on Ubuntu)
+# install with: sudo pacman -Syu --needed $(grep -v '^#' omarchy-pacman.txt)
+stow
+git
+zsh
+neovim
+tmux
+fzf
+fd
+bat
+eza
+zoxide
+ripgrep
+github-cli
+lazygit
+wl-clipboard
+base-devel
+g++
+gdb
+python
+python-pip
+python-virtualenv
+nodejs
+npm
+unzip
+curl
+wget
+tree-sitter-cli

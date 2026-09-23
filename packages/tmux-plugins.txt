@@ -1,0 +1,5 @@
+tmux-continuum 0698e8f Merge pull request #132 from rmartine-ias/osx-added-plist https://git::@github.com/tmux-plugins/tmux-continuum
+tmux-gruvbox aeb30c7 Merge pull request #53 from moritzdietz/patch-1 https://git::@github.com/egel/tmux-gruvbox
+tmux-resurrect cff343c Merge pull request #474 from georgeanderson/master https://git::@github.com/tmux-plugins/tmux-resurrect
+tmux-sensible 25cb91f Merge pull request #66 from jjant/patch-1 https://git::@github.com/tmux-plugins/tmux-sensible
+tpm e261deb Add link to tpack to the readme https://github.com/tmux-plugins/tpm.git

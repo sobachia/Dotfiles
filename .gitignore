@@ -1,0 +1,45 @@
+# secrets / credentials - NEVER commit
+.git-credentials
+.gitconfig.local
+*.key
+*.pem
+.ssh/
+.gnupg/
+.vault/
+.vault-obsidian/
+
+# shell history / cache
+*zsh_history
+*bash_history
+*python_history
+.zcompdump*
+*.zwc
+.cache/
+.python_history
+.viminfo
+.wget-hsts
+.motd_shown
+
+# tool caches / installs (rebuilt by bootstrap)
+node_modules/
+.opencode/bin/
+.config/opencode/node_modules/
+.tmux/plugins/
+.tmux/resurrect/
+.local/share/nvim/
+.local/share/zoxide/
+.local/share/opencode/
+.npm/
+.cargo/registry/
+.cargo/git/
+.vscode-server/
+.vscode-remote-containers/
+pytest_cache/
+__pycache__/
+
+# OS / editor noise
+.DS_Store
+.netrwhist
+*.log
+*.swp
+*~

@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	email = sillybanana6779@gmail.com
+	name = baduk
+[core]
+	editor = nvim
+[alias]
+	tree = log --graph --oneline --all --decorate
+	tree-rich = log --graph --all --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
